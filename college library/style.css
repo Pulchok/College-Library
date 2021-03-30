@@ -1,0 +1,111 @@
+/* CSS reset  */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* navigation section */
+ .navbar{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:sticky;
+    top: 0px;
+    background-color: black;
+    opacity: 0.6;
+
+ }
+ .navbar-brand{
+     color: cornsilk;
+ }
+ .nav-link{
+     color: cornsilk;
+ }
+ .btn{
+     color:white;
+ }
+
+ #message{
+     padding-bottom: 0px;
+     position: absolute;
+     display: flex;  
+     width:27%;
+     font-family: 'Baloo Bhai 2', cursive;
+
+    
+ }
+
+
+ /* Container Section  */
+
+ .container-fluid{
+    display: flex;
+   
+    font-family: 'Bree Serif', serif;
+ }
+ #container h1{
+    text-align: center;
+    margin: 0px;
+    color:purple;
+    font-family: 'Bree Serif', serif;
+    font-size: 3.5rem;
+    padding: 8px;
+    
+ }
+
+
+ #container::before{
+    content: "";
+    position: absolute;
+    background: url('../bg2.jpg');
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 91.5%;
+    z-index: -1;
+    opacity: 0.3;
+    }
+ #container form{
+        margin: 0px;
+        width: 90%;
+        padding: 20px;
+        padding-bottom: 10px;
+    }
+
+#container label,
+#container legend{
+    font-size: 1.4rem;
+    font-family: 'Bree Serif', serif;
+
+}
+
+#container .row {
+    margin: 0px;
+}
+
+
+/* Table section  */
+
+#htable h1{
+    text-align:left;
+    color:brown;
+    font-family: 'Bree Serif', serif;
+    font-size: 1.8rem;
+    padding-left: 20px;   
+}
+
+#table{
+    padding-left: 20px;
+    font-family: 'Baloo Bhai 2', cursive;
+    }
+
+.table{
+    counter-reset: serial-number;
+}
+.table td:first-child:before {
+    counter-increment: serial-number;  /* Increment the serial number counter */
+    content: counter(serial-number);  /* Display the counter */
+ }
