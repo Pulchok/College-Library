@@ -130,13 +130,26 @@ html{
     padding-left: 20px;
 }
 
-#clients{
+#intro{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#clients img{
+#intro img{
     height:300px;
     
+}
+#description button{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 4px;
+    border: 2px brown;
+    background-color:aqua;
+    color:purple;
+    font-size:1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Bree Serif', serif;
 }
